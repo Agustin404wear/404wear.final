@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404wear</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="nav-encabezado">
+      <div class="menu-izquierda">
+        <a href="#" class="logo">404wear</a>
+        <a href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Sobre 404wear</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="menu-derecha">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="carrito">
+          <a href="#" title="Ver carrito" class="carrito-icono">🛒</a>
+          <span class="carrito-contador">2</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="marquee-container">
+    <div class="marquee-track">
+      ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~ diseño ~ calidad ~ precio ~
+    </div>
+  </div>
+
+  <main>
+    <section class="productos">
+      <div class="producto">
+        <h2>Remeras</h2>
+        <button onclick="agregarAlCarrito(1)">Ver más</button>
+      </div>
+      <div class="producto">
+        <h2>Joggers</h2>
+        <button onclick="agregarAlCarrito(2)">Ver más</button>
+      </div>
+      <div class="producto">
+        <h2>Accesorios</h2>
+        <button onclick="agregarAlCarrito(3)">Ver más</button>
+      </div>
+      <div class="producto">
+        <h2>Buzos</h2>
+        <button onclick="agregarAlCarrito(4)">Ver más</button>
+      </div>
+    </section>
+
+    <section class="carrito-seccion">
+      <h3>Carrito</h3>
+      <ul id="carrito"></ul>
+      <button onclick="enviarPedido()">Confirmar pedido</button>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 404wear. All rights reserved.
+  </footer>
+</body>
+</html>
